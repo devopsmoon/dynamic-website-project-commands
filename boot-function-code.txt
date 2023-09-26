@@ -1,1 +1,8 @@
-if (env('APP_ENV') === 'production') {\Illuminate\Support\Facades\URL::forceScheme('https');}
+/var/www/html/app/Providers
+open file AppServiceProvider.php
+in public boot function 
+{
+add this line
+               if (env('APP_ENV') === 'production') {\Illuminate\Support\Facades\URL::forceScheme('https');}
+:wq
+restart httpd server
